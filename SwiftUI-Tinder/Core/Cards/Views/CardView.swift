@@ -15,8 +15,9 @@ struct CardView: View {
             Image(.samplePerson)
                 .resizable()
                 .scaledToFill()
+
             UserInfoView()
-                .padding(.horizontal)
+                .padding(.horizontal, 100)
         }
         .frame(width: cardWidth, height: cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))

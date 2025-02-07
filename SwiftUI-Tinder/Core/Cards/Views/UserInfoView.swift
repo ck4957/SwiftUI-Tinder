@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UserInfoView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 5) {
             HStack {
                 Text("John")
                     .font(.title)

@@ -9,13 +9,15 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             Image(.samplePerson)
                 .resizable()
                 .scaledToFill()
-                .frame(width: cardWidth, height: cardHeight)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+            UserInfoView()
+                .padding(.horizontal)
         }
+        .frame(width: cardWidth, height: cardHeight)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 

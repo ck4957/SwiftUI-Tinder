@@ -18,13 +18,14 @@ struct MainTabView: View {
                 .tag(1)
 
             Text("Inbox View")
-                .tabItem { Image(systemName: "bubble") }
+                .tabItem { Image(systemName: "message") }
                 .tag(2)
 
             Text("Profile View")
                 .tabItem { Image(systemName: "person") }
                 .tag(3)
         }
+        .tint(.primary)
     }
 }
 

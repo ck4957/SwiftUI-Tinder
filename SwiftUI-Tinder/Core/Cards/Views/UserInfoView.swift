@@ -14,16 +14,16 @@ struct UserInfoView: View {
                 Text("John")
                     .font(.title)
                     .fontWeight(.heavy)
-                
+
                 Text("35")
                     .font(.title)
                     .fontWeight(.semibold)
-                
+
                 Spacer()
-                
+
                 Button {
                     print("Button tapped")
-                    
+
                 } label: {
                     Image(systemName: "arrow.up.circle")
                         .fontWeight(.bold)
